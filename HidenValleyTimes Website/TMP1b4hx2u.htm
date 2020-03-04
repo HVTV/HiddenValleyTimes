@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>   
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+ <link href="HiddenValleyTimes styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+</script>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<div class="navbar">
+<a href="index2.html">Home</a>
+  <a href="News.html">News</a>
+ <a href="HVTV.html">HVTV</a>
+  <a href="Games.html">Games</a>
+  <a href="Surveys.html">Surveys</a>
+ <a href="Shop.html">Shop</a>
+</div>
+    <img src="space.png" width="100%" alt="space" height="70">
+    <a href="Games.html">back</a>
+<div></div><iframe title="Flash Wrapper" width="625" height="350" scrolling="no" frameborder="0" id="1297908574" name="1297908574" allowtransparency="true" class="igm" src="//4nodbmbq1kg3jfkhn7m4ua4bn329jbnf-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://hosting.gmodules.com/ig/gadgets/file/105629041657992777031/flash-wrapper.xml&amp;container=enterprise&amp;view=default&amp;lang=en&amp;country=ALL&amp;sanitize=0&amp;v=3644292772cac119&amp;libs=core&amp;mid=103&amp;parent=https://sites.google.com/site/insanemathgames/change-the-banner/portal-flash-version#up_mode=window&amp;up_flashvars&amp;up_bg&amp;up_url=https://sites.google.com/site/insanemathgames/Portal+(Flash+Version).swf&amp;up_base&amp;st=e%3DAIHE3cBLYXXF%252BwXHVrWSQi6%252BmryvZyDEEoxLzfeI00Uk49LSngUqQyKjRo66fOUoNtEoNJVEl2TpQFVNnA3E9W5M5uI91YpPI28iJ%252FACfM38Xed6j8WVxbwBItu40cYIaevZJiqcuMeB%26c%3Denterprise&amp;rpctoken=2160820037638891568"></iframe>
+</body>
+</html>

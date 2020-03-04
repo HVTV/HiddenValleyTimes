@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>   
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+</style>
+<link href="HiddenValleyTimes styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+</script>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<div class="navbar">
+<a href="index2.html">Home</a>
+  <a href="News.html">News</a>
+ <a href="HVTV.html">HVTV</a>
+  <a href="Games.html">Games</a>
+  <a href="Surveys.html">Surveys</a>
+ <a href="Shop.html">Shop</a>
+</div>
+<div class="sidebar"><h4>Top Ten Highest Rated Games</h4><ol><li><a href="Tetris jump.html" class="side">Portal</a></li><li><a href="run.html">Pong 3</a></li></ol></div>
+</body>
+</html>
